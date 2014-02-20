@@ -1,42 +1,14 @@
 //Josh and Aaron
-
-
-var matches = [];
-var anaGram = function(wordA, wordList) {
-  wordList = wordList.split(" ");
-  wordA = wordA.split("");
-  wordA = wordA.sort();
-
-
-  for (var index = 0; index < wordList.length; index +=1) {
-    wordList = (wordList[index].split(" "));
-  }
-console.log(wordList);
-  for (var index = 0; index < wordList.length; index +=1) {
-    if (wordList[index].split("").sort() === wordA) 
-    {
-      matches.push(index);
-    }  
-  }
-  alert(matches);
+var factorial0 = function(inputNumber) {
+  return 1;
 };
 
-
-$(document).ready(function () {
-    var title;
-      $("form#anagrammer").submit(function(event) {
-        wordA = $("input#wordA").val();
-        wordList = $("input#wordList").val();
-    var result = anaGram(wordA, wordList);
-    
-    event.preventDefault();
-  });
-});
-
-
-
-
-
-
-
-
+var factorialLesson = function(inputNumber) {
+  var counter = (inputNumber - 1);
+  
+  while (counter > 0) {  
+    inputNumber = (inputNumber * counter);
+    counter = counter -= 1;
+}
+return inputNumber;
+};
