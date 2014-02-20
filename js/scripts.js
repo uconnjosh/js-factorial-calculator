@@ -12,3 +12,4 @@ var factorialLesson = function(inputNumber) {
 }
 return inputNumber;
 };
+//modification
